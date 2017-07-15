@@ -27,6 +27,7 @@
     "babel-cli": "^6.24.1",
     "babel-preset-es2017": "^6.24.1",
     "babel-preset-power-assert": "^1.0.0",
+    "beater": "^5.0.0",
     "cpx": "^1.5.0",
     "npm-run-all": "^4.0.2",
     "nyc": "^11.0.3",
@@ -67,7 +68,7 @@
     "watch:es2017": "npm run \"build:tmp:es2017\" -- --watch",
     "watch:lib": "watch --wait 2 \"npm run build:lib\" \".tmp/es5/src/\"",
     "watch:test": "watch --wait 2 \"npm test\" \".tmp/es5/src\" \".tmp/es5/test\"",
-    "watch:ts": "npm run \"build:tmp:tsc\" -- --watch"
+    "watch:ts": "npm run \"build:tmp:ts\" -- --watch"
   },
   "types": "lib/index.d.ts"
 }
