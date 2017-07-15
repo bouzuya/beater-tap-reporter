@@ -37,8 +37,16 @@
     "typescript": "^2.4.1",
     "watch": "^1.0.2"
   },
+  "files": [
+    "lib"
+  ],
   "homepage": "https://github.com/bouzuya/beater-tap-reporter",
-  "keywords": [],
+  "keywords": [
+    "beater",
+    "beater-reporter",
+    "reporter",
+    "tap"
+  ],
   "license": "MIT",
   "main": "lib/index.js",
   "repository": {
