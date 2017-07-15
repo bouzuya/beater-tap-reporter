@@ -2,6 +2,11 @@
 
 [beater](https://github.com/bouzuya/beater) [TAP](https://testanything.org/) reporter.
 
+The beater-tap-reporter can pipe to any TAP reporters.
+
+- [https://github.com/sindresorhus/awesome-tap#reporters](https://github.com/sindresorhus/awesome-tap#reporters)
+- [https://github.com/substack/tape#pretty-reporters](https://github.com/substack/tape#pretty-reporters)
+
 ## Badges
 
 [![npm version][npm-badge-url]][npm-url]
