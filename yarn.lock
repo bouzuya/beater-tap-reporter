@@ -690,18 +690,18 @@ beater-reporter@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/beater-reporter/-/beater-reporter-0.4.0.tgz#9042743ff52bdac246ff20afd1568152fa2996c0"
 
-beater-tap-reporter@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/beater-tap-reporter/-/beater-tap-reporter-1.0.1.tgz#8dd0d7ac58e8b503d4c4b7e244b3a51e833b403b"
+beater-tap-reporter@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/beater-tap-reporter/-/beater-tap-reporter-1.0.2.tgz#bab433258db40ff6366bdc6d53cfd3c0b4c329ec"
   dependencies:
     beater-reporter "^0.4.0"
 
-beater@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/beater/-/beater-5.0.0.tgz#f644d1b495a5409d32e77df5e34e02ad86b99d05"
+beater@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/beater/-/beater-5.0.1.tgz#25c1b037a2ab03a42a9fa7acfdb5e209487f8675"
   dependencies:
     beater-reporter "^0.4.0"
-    beater-tap-reporter "^1.0.1"
+    beater-tap-reporter "^1.0.2"
 
 binary-extensions@^1.0.0:
   version "1.8.0"
