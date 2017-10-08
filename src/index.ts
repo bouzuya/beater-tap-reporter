@@ -4,7 +4,7 @@ class TapLikeReporter {
   private tests: Test[];
   private p: (s: string) => void;
 
-  constructor(p:  (s: string) => void) {
+  constructor(p: (s: string) => void) {
     this.p = p;
   }
 
@@ -32,9 +32,16 @@ class TapLikeReporter {
     if (typeof error !== 'undefined') {
       this.p('  ---');
       this.p('  name: ' + error.name);
-      this.p('  message: ' + error.message);
-      this.p('  stack: |');
-      this.p('    ' + error.stack.split(/\n/).join('\n    '));
+      this.p('  message: ' + (
+        error.message.indexOf('\n') >= 0
+          ? '|2\n    ' + error.message.split(/\n/).join('\n    ')
+          : error.message
+      ));
+      this.p('  stack: ' + (
+        error.stack.indexOf('\n') >= 0
+          ? '|2\n    ' + error.stack.split(/\n/).join('\n    ')
+          : error.stack
+      ));
       this.p('  ...');
     }
   }
