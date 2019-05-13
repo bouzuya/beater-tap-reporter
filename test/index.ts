@@ -1,5 +1,5 @@
-import * as assert from 'power-assert';
-import * as sinon from 'sinon';
+import assert from 'power-assert';
+import sinon from 'sinon';
 import { run, runWithOptions, test } from 'beater';
 
 import { reporter } from '../src';
