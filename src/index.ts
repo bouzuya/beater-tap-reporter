@@ -1,7 +1,7 @@
 import { Test, TestReporter, TestResult } from 'beater-reporter';
 
 class TapLikeReporter {
-  private tests: Test[];
+  private tests: Test[] = [];
   private p: (s: string) => void;
 
   constructor(p: (s: string) => void) {
