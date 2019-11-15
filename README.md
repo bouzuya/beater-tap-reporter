@@ -10,12 +10,12 @@ The beater-tap-reporter can pipe to any TAP reporters.
 ## Badges
 
 [![npm version][npm-badge-url]][npm-url]
-[![Travis CI][travisci-badge-url]][travisci-url]
+[![Travis CI][travis-ci-badge-url]][travis-ci-url]
 
-[npm-badge-url]: https://badge.fury.io/js/beater-tap-reporter.svg
+[npm-badge-url]: https://img.shields.io/npm/v/beater-tap-reporter
 [npm-url]: https://www.npmjs.com/package/beater-tap-reporter
-[travisci-badge-url]: https://travis-ci.org/bouzuya/beater-tap-reporter.svg?branch=master
-[travisci-url]: https://travis-ci.org/bouzuya/beater-tap-reporter
+[travis-ci-badge-url]: https://img.shields.io/travis/bouzuya/beater-tap-reporter
+[travis-ci-url]: https://travis-ci.org/bouzuya/beater-tap-reporter
 
 ## License
 
