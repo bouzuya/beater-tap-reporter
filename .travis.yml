@@ -4,6 +4,3 @@ node_js:
   - "12"
   - "10"
   - "8"
-before_script:
-  - npm run clean
-  - npm run build
