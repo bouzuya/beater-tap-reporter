@@ -47,9 +47,7 @@ class TapLikeReporter {
 }
 
 const reporter = (p?: (s: string) => void): TestReporter => {
-  const r = new TapLikeReporter(
-    typeof p === 'undefined' ? console.log.bind(console) : p
-  );
+  const r = new TapLikeReporter(p ?? console.log.bind(console));
   return {
     finished: r.finished.bind(r),
     started: r.started.bind(r),
