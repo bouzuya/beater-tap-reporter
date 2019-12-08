@@ -23,13 +23,12 @@ class TapLikeReporter {
   }
 
   testFinished({ error, test }: TestResult): void {
-    const nameOrUndefined = test.meta.get('name');
-    const name = typeof nameOrUndefined === 'undefined'
-      ? '' : nameOrUndefined;
+    const name = test.name;
     const ok = typeof error === 'undefined' ? 'ok' : 'not ok';
     const no = this.tests.indexOf(test) + 1;
     this.p(`${ok} ${no} - ${name}`);
     if (typeof error !== 'undefined') {
+      const stack = error.stack ?? '';
       this.p('  ---');
       this.p('  name: ' + error.name);
       this.p('  message: ' + (
@@ -38,9 +37,9 @@ class TapLikeReporter {
           : error.message
       ));
       this.p('  stack: ' + (
-        error.stack.indexOf('\n') >= 0
-          ? '|2\n    ' + error.stack.split(/\n/).join('\n    ')
-          : error.stack
+        stack.indexOf('\n') >= 0
+          ? '|2\n    ' + stack.split(/\n/).join('\n    ')
+          : stack
       ));
       this.p('  ...');
     }
