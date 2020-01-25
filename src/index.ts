@@ -31,16 +31,18 @@ class TapLikeReporter {
       const stack = error.stack ?? '';
       this.p('  ---');
       this.p('  name: ' + error.name);
-      this.p('  message: ' + (
-        error.message.indexOf('\n') >= 0
-          ? '|2\n    ' + error.message.split(/\n/).join('\n    ')
-          : error.message
-      ));
-      this.p('  stack: ' + (
-        stack.indexOf('\n') >= 0
-          ? '|2\n    ' + stack.split(/\n/).join('\n    ')
-          : stack
-      ));
+      this.p(
+        '  message: ' +
+          (error.message.indexOf('\n') >= 0
+            ? '|2\n    ' + error.message.split(/\n/).join('\n    ')
+            : error.message)
+      );
+      this.p(
+        '  stack: ' +
+          (stack.indexOf('\n') >= 0
+            ? '|2\n    ' + stack.split(/\n/).join('\n    ')
+            : stack)
+      );
       this.p('  ...');
     }
   }
