@@ -54,7 +54,7 @@ const reporter = (p?: (s: string) => void): TestReporter => {
     finished: r.finished.bind(r),
     started: r.started.bind(r),
     testFinished: r.testFinished.bind(r),
-    testStarted: r.testStarted.bind(r)
+    testStarted: r.testStarted.bind(r),
   };
 };
 

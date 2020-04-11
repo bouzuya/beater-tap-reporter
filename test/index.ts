@@ -85,7 +85,7 @@ const tests1 = [
         assert(p.getCall(7).args[0] === "  ...");
       }
     );
-  })
+  }),
 ];
 
 run(tests1).catch(() => process.exit(1));
