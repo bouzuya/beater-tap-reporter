@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/bouzuya/beater-tap-reporter/compare/v4.0.0...v4.0.1) (2020-04-11)
+
+* build(deps): move beater-reporter to deps from devDeps
+* build(deps-dev): update devDependencies
+* style: use prettier@2 default settings
+* style: fixpack
+
 ## [4.0.0](https://github.com/bouzuya/beater-tap-reporter/compare/v3.0.1...v4.0.0) (2020-02-01)
 
 * build!: drop support for node.js v8 ([1a84b85](https://github.com/bouzuya/beater-tap-reporter/commit/1a84b85))
