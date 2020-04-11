@@ -1,4 +1,4 @@
-import { Test, TestReporter, TestResult } from 'beater-reporter';
+import { Test, TestReporter, TestResult } from "beater-reporter";
 
 class TapLikeReporter {
   private tests: Test[] = [];
@@ -14,7 +14,7 @@ class TapLikeReporter {
 
   started(tests: Test[]): void {
     this.tests = tests;
-    this.p('TAP version 13');
+    this.p("TAP version 13");
     this.p(`1..${tests.length}`);
   }
 
@@ -24,26 +24,26 @@ class TapLikeReporter {
 
   testFinished({ error, test }: TestResult): void {
     const name = test.name;
-    const ok = typeof error === 'undefined' ? 'ok' : 'not ok';
+    const ok = typeof error === "undefined" ? "ok" : "not ok";
     const no = this.tests.indexOf(test) + 1;
     this.p(`${ok} ${no} - ${name}`);
-    if (typeof error !== 'undefined') {
-      const stack = error.stack ?? '';
-      this.p('  ---');
-      this.p('  name: ' + error.name);
+    if (typeof error !== "undefined") {
+      const stack = error.stack ?? "";
+      this.p("  ---");
+      this.p("  name: " + error.name);
       this.p(
-        '  message: ' +
-          (error.message.indexOf('\n') >= 0
-            ? '|2\n    ' + error.message.split(/\n/).join('\n    ')
+        "  message: " +
+          (error.message.indexOf("\n") >= 0
+            ? "|2\n    " + error.message.split(/\n/).join("\n    ")
             : error.message)
       );
       this.p(
-        '  stack: ' +
-          (stack.indexOf('\n') >= 0
-            ? '|2\n    ' + stack.split(/\n/).join('\n    ')
+        "  stack: " +
+          (stack.indexOf("\n") >= 0
+            ? "|2\n    " + stack.split(/\n/).join("\n    ")
             : stack)
       );
-      this.p('  ...');
+      this.p("  ...");
     }
   }
 }
